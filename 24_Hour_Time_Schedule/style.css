@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.circle-container {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 30px auto;
+  background-image: url('bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#timeCircle {
+  width: 71.6%;
+  height: 71.6%;
+  display: block;
+}
+
+.legend-box {
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.legend-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-box {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  border: 1px solid #ccc;
+}
+
+.legend-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 20px;
+  }
+  
+  .legend-text {
+    font-size: 14px;
+  }
+  
+  .color-box {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .legend-box {
+    padding: 16px;
+  }
+}
