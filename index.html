@@ -1,1 +1,131 @@
-index file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects Dashboard</title>
+  <style>
+    :root {
+      --bg-color: #f0f4f8;
+      --card-bg: #ffffff;
+      --accent: #007bff;
+      --text-color: #333;
+      --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--accent);
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      margin: 0 0 0.8rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+
+    .card a {
+      align-self: flex-start;
+      text-decoration: none;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .card a:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌐 My Web Projects Dashboard</header>
+
+  <div class="container">
+
+    <div class="card">
+      <h3>Project 1: My Pustakalay</h3>
+      <p>A digital library to explore and read books online.</p>
+      <a href="my-pustakalay/index.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 2: Tech Tools</h3>
+      <p>A collection of mini tools built with HTML/CSS/JS.</p>
+      <a href="tech-tools/index.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 3: Weather App</h3>
+      <p>Simple app showing weather details using API.</p>
+      <a href="weather-app/index.html" target="_blank">Open</a>
+    </div>
+
+    <!-- Add more project cards below by copying this block -->
+    <!--
+    <div class="card">
+      <h3>Project Title</h3>
+      <p>Short description of the project.</p>
+      <a href="folder-name/index.html" target="_blank">Open</a>
+    </div>
+    -->
+
+  </div>
+
+  <footer>
+    Created by Shubham • All projects are local demos
+  </footer>
+
+</body>
+</html>
